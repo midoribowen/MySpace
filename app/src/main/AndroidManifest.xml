@@ -15,6 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CreateSpace"></activity>
+        <activity android:name=".Space" />
     </application>
 
 </manifest>

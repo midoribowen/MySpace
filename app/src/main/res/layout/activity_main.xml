@@ -4,35 +4,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.epicodus.myspace.MainActivity"
-    android:background="#FFFFFF">
+    android:background="@color/colorIcons">
 
-    <GridLayout
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:textAlignment="viewStart"
+            android:paddingLeft="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:id="@+id/textView17"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_marginLeft="10dp"
+                android:background="@color/button_material_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:id="@+id/textView18"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_marginLeft="10dp"
+                android:background="@color/button_material_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Illia Kuchko"
-            android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="false"
-            android:textSize="25sp"
-            android:textColor="@color/colorPrimaryText"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            android:text="LOG IN"
+            android:id="@+id/button"
+            android:layout_gravity="right"
+            android:background="@color/colorAccent"
+            android:textSize="20sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_below="@+id/textView"
-            android:layout_alignParentStart="false"
-            android:src="@drawable/profile"
-            android:adjustViewBounds="true"
-            android:maxHeight="175dp"
-            android:maxWidth="175dp"
-            android:layout_marginLeft="5dp" />
-    </GridLayout>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:text="Sign up"
+            android:id="@+id/buttonSignUp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorIcons" />
 
+    </LinearLayout>
 </RelativeLayout>
